@@ -27,7 +27,7 @@ const featuredConfig = {
 const mergeStyles = function (posts, config){
     posts.forEach((post, index) => {
         post.style = config[index]
-        post.author = 'Miguel Coder'
+        post.author = 'Irakoze Tititof'
         post.description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.'
     })
 }

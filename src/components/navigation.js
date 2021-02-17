@@ -4,41 +4,29 @@ import { Avatar } from 'antd';
 
 const navLinks = [
     {
+        title: 'Home',
+        path: '/'
+    },
+    {
       title: 'Blog',
-      path: '/'
+      path: '/blog'
     },
     {
-      title: 'Web Dev',
-      path: '/web-dev'
-    },
-    {
-      title: 'Cloud',
-      path: '/cloud'
-    },
-    {
-      title: 'Algorithms',
-      path: '/algos'
-    },
-    {
-      title: 'Brain Hacking',
-      path: '/health'
-    },
+        title: 'Contact Us',
+        path: '/contact-us'
+      },
     {
       title: 'Login',
       path: '/login'
     },
-    {
-      title: 'Post Viewer',
-      path: '/post'
-    }
   ]
 
-export default function Navigation () {
+export default function Navigation ({ user }) {
     const [menuActive, setMenuActive] = useState(false)
 
     return (
     <nav className={`site-navigation ${menuActive && 'active'}`} role="navigation">
-        <span className="menu-title">My Awesome Blog</span>
+        <span className="menu-title">React Blog</span>
         <div
             className="menu-content-container"
         >
@@ -52,7 +40,7 @@ export default function Navigation () {
             </ul>
             <div className="menu-avatar-container">
                 <Avatar size={50} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                <span className="menu-avatar-name">Miguel Coder</span>
+                       <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
             </div>
         </div>
         <i 

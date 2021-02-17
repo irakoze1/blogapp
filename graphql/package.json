@@ -1,0 +1,19 @@
+{
+  "name": "react-blog-backend",
+  "version": "1.0.0",
+  "description": "Graphql backend for react blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Tititof irakoze",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.21.0",
+    "esm": "^3.2.25",
+    "graphql": "^15.5.0",
+    "graphql-tools": "^7.0.3",
+    "koa": "^2.13.1",
+    "moment": "^2.29.1"
+  }
+}

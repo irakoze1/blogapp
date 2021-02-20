@@ -4,12 +4,15 @@
   "description": "Graphql backend for react blog",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "create-migration": "node ./database/actions/create-migration.js",
+    "run-migration": "node ./database/actions/run-migration.js"
   },
   "author": "Tititof irakoze",
   "license": "ISC",
   "dependencies": {
     "apollo-server-koa": "^2.21.0",
+    "bluebird": "^3.7.2",
     "dotenv": "^8.2.0",
     "esm": "^3.2.25",
     "graphql": "^15.5.0",

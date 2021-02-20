@@ -4,9 +4,7 @@ const path = require('path')
 let tableName
 
 try {
-    tableName = process
-    .argv
-    .find((arg) =>
+    tableName = process.argv.find((arg) =>
         arg.includes('--tableName=')
     ).split('=')[1]
 } catch(err) {

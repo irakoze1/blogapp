@@ -3,23 +3,36 @@ import { Link } from 'react-router-dom'
 import { Avatar } from 'antd';
 
 const navLinks = [
-    {
-        title: 'Home',
-        path: '/'
-    },
-    {
-      title: 'Blog',
-      path: '/blog'
-    },
-    {
-        title: 'Contact Us',
-        path: '/contact-us'
-      },
-    {
-      title: 'Login',
-      path: '/login'
-    },
-  ]
+  {
+    title: 'Blog',
+    path: '/'
+  },
+  {
+    title: 'Web Dev',
+    path: '/web-dev'
+  },
+  {
+    title: 'Cloud',
+    path: '/cloud'
+  },
+  {
+    title: 'Algorithms',
+    path: '/algos'
+  },
+  {
+    title: 'Brain Hacking',
+    path: '/health'
+  },
+  {
+    title: 'Login',
+    path: '/login'
+  },
+  {
+    title: 'Post Viewer',
+    path: '/post'
+  }
+]
+
 
 export default function Navigation ({ user }) {
     const [menuActive, setMenuActive] = useState(false)
@@ -40,7 +53,7 @@ export default function Navigation ({ user }) {
             </ul>
             <div className="menu-avatar-container">
                 <Avatar size={50} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                       <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+                <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
             </div>
         </div>
         <i 
